@@ -1,4 +1,8 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<app-asset-view [list]="bundleList" (updateList)="newList($event)">
+
+</app-asset-view>
+
+<br><br>
+<app-asset-add [list]="bundleList" (valueChange)="newBundle($event)" >
+
+</app-asset-add>

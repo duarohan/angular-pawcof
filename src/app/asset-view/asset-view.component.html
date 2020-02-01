@@ -1,0 +1,21 @@
+
+<table>
+  <thead>
+    <th>version</th>
+    <th>Asset Type</th>
+    <th>File</th>
+    <th>Action</th>
+  </thead>
+  <tbody *ngFor="let data of list">
+    <tr>
+      <td>{{data.version}}</td>
+      <td>{{data.asset_type}}</td>
+      <td>{{data.file}}</td>
+      <td>
+        <a (click)= delete(data.version)>Delete</a>
+      </td>
+    </tr>
+  </tbody>
+  
+  
+</table>

@@ -1,0 +1,18 @@
+<form (ngSubmit)="onSubmit(assetAddForm.value)" [formGroup]="assetAddForm">
+  <div>
+    <label>Version : </label>
+    <input type="text" formControlName ="version" placeholder ="version">
+  </div>
+  <br>
+  <div>
+    <label>Asset Type : </label>
+    <input type="text" formControlName ="asset_type" placeholder ="asset Type">
+  </div>
+  <br>
+  <div>
+    <label>File : </label>
+    <input type="text" formControlName ="file" placeholder ="file">
+  </div>
+  <br>
+  <button type="submit">Submit</button>
+</form>
